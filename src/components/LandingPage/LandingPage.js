@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import Header from "../Header/Header";
-import Achievements from "../Achievements/Achievements";
-import CallToAction from "../CallToAction/CallToAction";
-import About from "../About/About";
-import FoundationList from "../FoundationList/FoundationList";
-import Footer from "../Footer/Footer";
+import Header from "../Header";
+import Achievements from "../Achievements";
+import CallToAction from "../CallToAction";
+import About from "../About";
+import FoundationList from "../FoundationList";
+import Footer from "../Footer";
 import './LandingPage.scss';
 
 export default class LandingPage extends Component {

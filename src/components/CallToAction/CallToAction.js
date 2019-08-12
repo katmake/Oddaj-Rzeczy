@@ -1,11 +1,11 @@
 import React from "react";
 import steps from "./steps";
-import Step from "../Step/Step";
+import Step from "../Step";
 import "./CallToAction.scss";
 
-function CallToAction() {
+const CallToAction = () => {
   return (
-    <section className="callToAction">
+    <section id="callToAction" className="callToAction">
       <h2>Wystarczą 4 proste kroki</h2>
       <img
         className="callToAction__ornament"
@@ -17,7 +17,9 @@ function CallToAction() {
           <Step key={key} step={steps[key]} />
         ))}
       </div>
-      <button>Załóż konto</button>
+      <a href="./logowanie" className="callToAction__btn">Załóż konto</a>
+
+      
     </section>
   );
 }

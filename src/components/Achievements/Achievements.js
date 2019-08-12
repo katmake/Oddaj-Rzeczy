@@ -6,7 +6,7 @@ export default class Achievements extends Component {
   
   render() {
     return (
-      <section className="achievements">
+      <section id="achievements" className="achievements">
         <h2>Osiągnięcia</h2>
       </section>
     )

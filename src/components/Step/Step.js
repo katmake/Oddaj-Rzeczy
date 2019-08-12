@@ -1,7 +1,7 @@
 import React from "react";
 import "./Step.scss";
 
-function Step(props) {
+const Step = (props) => {
   return (
     <div className="stepBox">
       <div className="stepBox__icon">

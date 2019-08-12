@@ -1,10 +1,10 @@
 import React from 'react';
 import './styles/main.scss';
-import LandingPage from "./components/LandingPage/LandingPage"
+import Router from "./components/Router"
 
 function App() {
   return (
-    <LandingPage />
+    <Router />
   );
 }
 

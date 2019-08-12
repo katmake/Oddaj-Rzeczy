@@ -23,13 +23,12 @@
     align-items: center;
   }
 
-  button {
+  &__btn {
     margin-top: 3rem;
     padding: 2rem 3rem;
     font-size: 2rem;
     text-transform: uppercase;
-    background: none;
-    outline: none;
     border: 1px solid #3c3c3c;
+    text-decoration: none;
   }
 }

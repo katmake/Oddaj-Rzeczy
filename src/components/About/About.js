@@ -4,7 +4,7 @@ import './About.scss';
 export default class About extends Component {
   render() {
     return (
-      <section className="about">
+      <section id="about" className="about">
         <h2>O nas</h2>
       </section>
     )
