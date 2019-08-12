@@ -1,12 +1,16 @@
 import React from "react";
 import "./About.scss";
 
-function About() {
+const About = () => {
   return (
     <section className="about">
       <div className="descriptionBox">
         <h2>O nas</h2>
-        <img className="descriptionBox__ornament" src="/images/ornament.png" alt="ornament" />
+        <img
+          className="descriptionBox__ornament"
+          src="/images/ornament.png"
+          alt="ornament"
+        />
         <p>
           Nori grape silver beet broccoli kombu beet greens fava bean potato
           quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil
@@ -17,10 +21,10 @@ function About() {
         </div>
       </div>
       <div className="imageBox">
-        <img src="/images/about.png" alt=""/>
+        <img src="/images/about.png" alt="" />
       </div>
     </section>
   );
-}
+};
 
 export default About;
