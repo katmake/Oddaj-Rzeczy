@@ -1,7 +1,35 @@
 .callToAction {
   width: 100%;
-  min-height: 700px;
+  min-height: 750px;
+  text-align: center;
+  min-height: 750px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 3rem;
+
+  &__ornament {
+    height: 2.25rem;
+    margin: 2rem 0;
+  }
+
+  &__stepsBox {
+    min-height: 300px;
+    padding: 0 1rem;
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  button {
+    margin-top: 3rem;
+    padding: 2rem 3rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    background: none;
+    outline: none;
+    border: 1px solid #3c3c3c;
+  }
 }
