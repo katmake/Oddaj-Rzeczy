@@ -17,7 +17,7 @@ const CallToAction = () => {
           <Step key={key} step={steps[key]} />
         ))}
       </div>
-      <a href="./logowanie" className="callToAction__btn">Załóż konto</a>
+      <a href="./rejestracja" className="callToAction__btn">Załóż konto</a>
 
       
     </section>
