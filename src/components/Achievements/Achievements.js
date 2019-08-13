@@ -1,14 +1,18 @@
-import React, { Component } from 'react';
-import './Achievements.scss';
+import React from "react";
+import accomplishments from "./accomplishments";
+import Achievement from "../Achievement";
+import "./Achievements.scss";
 
+const Achievements = () => {
+  return (
+    <section id="achievements" className="achievements">
+      <div className="achievementsBox">
+        {Object.keys(accomplishments).map(key => (
+          <Achievement key={key} accomplishment={accomplishments[key]} />
+        ))}
+      </div>
+    </section>
+  );
+};
 
-export default class Achievements extends Component {
-  
-  render() {
-    return (
-      <section id="achievements" className="achievements">
-        <h2>Osiągnięcia</h2>
-      </section>
-    )
-  }
-}
+export default Achievements;
