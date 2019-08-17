@@ -1,0 +1,51 @@
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-top: 5rem;
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+
+  &__contactData {
+    display: flex;
+    justify-content: space-between;
+
+    input {
+      width: 45%;
+    }
+  }
+
+  &__contactMsg {
+    resize: none;
+    overflow: hidden;
+  }
+
+  &__btn {
+    width: 100px;
+    height: 50px;
+    margin: 2rem 0;
+    background: transparent;
+    outline: none;
+    align-self: center;
+    border: 1px solid #3c3c3c;
+    font-weight: 400;
+    cursor: pointer;
+  }
+
+  input,
+  textarea {
+    height: 50px;
+    padding: 10px 30px;
+    margin: 1.5rem 0;
+    font-size: 1.1rem;
+    font-weight: 400;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #3c3c3c;
+    outline: none;
+  }
+}
