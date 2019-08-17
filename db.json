@@ -1,0 +1,142 @@
+{
+  "fundations": [
+    {
+      "category": "Fundacja",
+      "btnText": "Fundacjom",
+      "items": [
+        {
+          "name": "Dbam o Zdrowie",
+          "mission": "Pomoc osobom znajdującym się w trudnej sytuacji życiowej",
+          "needs": "ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+        },
+        {
+          "name": "Dla dzieci",
+          "mission": "Pomoc dzieciom z ubogich rodzin",
+          "needs": "ubrania, meble, zabawki"
+        },
+        {
+          "name": "Bez domu",
+          "mission": "Pomoc dla osób nie posiadających miejsca zamieszkania",
+          "needs": "ubrania, jedzenie, ciepłe koce"
+        },
+        {
+          "name": "Lorem ipsum 1",
+          "mission": "Accumsan lacus vel facilisis volutpat est.",
+          "needs": "enim nec dui nunc mattis"
+        },
+        {
+          "name": "Lorem ipsum 2",
+          "mission": "Accumsan lacus vel facilisis volutpat est.",
+          "needs": "enim nec dui nunc mattis"
+        },
+        {
+          "name": "Lorem ipsum 3",
+          "mission": "Accumsan lacus vel facilisis volutpat est.",
+          "needs": "enim nec dui nunc mattis"
+        },
+        {
+          "name": "Lorem ipsum 4",
+          "mission": "Accumsan lacus vel facilisis volutpat est.",
+          "needs": "enim nec dui nunc mattis"
+        },
+        {
+          "name": "Lorem ipsum 5",
+          "mission": "Accumsan lacus vel facilisis volutpat est.",
+          "needs": "enim nec dui nunc mattis"
+        },
+        {
+          "name": "Lorem ipsum 6",
+          "mission": "Accumsan lacus vel facilisis volutpat est.",
+          "needs": "enim nec dui nunc mattis"
+        },
+        {
+          "name": "Lorem ipsum 7",
+          "mission": "Accumsan lacus vel facilisis volutpat est.",
+          "needs": "enim nec dui nunc mattis"
+        }
+      ]
+    },
+    {
+      "category": "Organizacja pozarządowa",
+      "btnText": "Organizacjom pozarządowym",
+      "items": [
+        {
+          "name": "Świetlica Słoneczko",
+          "mission": "Pomoc dzieciom w nauce, animacja wolnego czasu",
+          "needs": "pomoce naukowe, artykuły szkolne, gry, zabawki"
+        },
+        {
+          "name": "Nowy start",
+          "mission": "Wsparcie reintegracji osóby wykluczonych społecznie",
+          "needs": "artykuły gospodarstwa domowego, meble, odzież"
+        },
+        {
+          "name": "Pies i kot",
+          "mission": "Opieka nad bezdomnymi zwierzętami",
+          "needs": "karma, koce"
+        },
+        {
+          "name": "Aktywne dziecko",
+          "mission": "Promocja sportu i zdrowego trybu życia",
+          "needs": "sprzęt sportowy, odzież sportowa"
+        },
+        {
+          "name": "Lorem ipsum",
+          "mission": "Accumsan lacus vel facilisis volutpat est.",
+          "needs": "enim nec dui nunc mattis"
+        },
+        {
+          "name": "Lorem ipsum",
+          "mission": "Accumsan lacus vel facilisis volutpat est.",
+          "needs": "enim nec dui nunc mattis"
+        }
+      ]
+    },
+    {
+      "category": "Lokalna zbiórka",
+      "btnText": "Lokalnym zbiórkom",
+      "items": [
+        {
+          "name": "Książki dla szpitala",
+          "mission": "Poszerzamy zbiory biblioteki przyszpitalnej",
+          "needs": "książki, czasopisma, płyty dvd"
+        },
+        {
+          "name": "Wspieramy Dom Samotnej Matki",
+          "mission": "Pomoc kobietom w trudnej sytuacji życiowej",
+          "needs": "artykuły higieny osobistej, kosmetyki, ubrania, zabawki"
+        },
+        {
+          "name": "Nakrętki dla Szymona",
+          "mission": "Zbieramy  nakrętki na wózek inwalidzki",
+          "needs": "plastikowe nakrętki"
+        },
+        {
+          "name": "Podziel się ciepłem",
+          "mission": "Pomoc osobom bezdomnym",
+          "needs": "szale, czapki, rękawiczki, kurtki, swetry"
+        },
+        {
+          "name": "Nakrętki dla hospicjum",
+          "mission": "Zgromadzenie środków na remont budynku hospicjum",
+          "needs": "plastikowe nakrętki"
+        },
+        {
+          "name": "Lorem ipsum",
+          "mission": "Accumsan lacus vel facilisis volutpat est.",
+          "needs": "enim nec dui nunc mattis"
+        },
+        {
+          "name": "Lorem ipsum",
+          "mission": "Accumsan lacus vel facilisis volutpat est.",
+          "needs": "enim nec dui nunc mattis"
+        },
+        {
+          "name": "Lorem ipsum",
+          "mission": "Accumsan lacus vel facilisis volutpat est.",
+          "needs": "enim nec dui nunc mattis"
+        }
+      ]
+    }
+  ]
+}

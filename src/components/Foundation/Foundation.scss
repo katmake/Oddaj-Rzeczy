@@ -1,0 +1,47 @@
+.found {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin: 1rem 0;
+
+  &__title {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    margin-top: 1.5rem;
+  }
+
+  &__desc {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      font-family: "Merriweather", serif;
+      font-size: 1.1rem;
+    }
+
+    div {
+      width: 50%;
+
+      hr {
+        width: 70%;
+        margin-top: 1.75rem;
+      }
+    }
+
+    &-mission {
+      font-style: italic;
+    }
+
+    &-needs {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  }
+}

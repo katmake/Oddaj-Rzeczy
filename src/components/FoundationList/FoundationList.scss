@@ -1,7 +1,80 @@
 .foundationList {
   width: 100%;
-  min-height: 500px;
+  min-height: 100vh;
+  padding: 2rem;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+
+  &__header {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__ornament {
+    height: 2rem;
+    margin: 1.5rem 0;
+  }
+
+  &__desc {
+    font-size: 1.4rem;
+    line-height: 2.25rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 2.5rem 0;
+    max-width: 600px;
+  }
+
+  &__buttonsContainer {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__btn {
+    width: 200px;
+    height: 80px;
+    margin-top: 1rem;
+    padding: 2rem 3rem;
+    font-size: 1.3rem;
+    border: 1px solid white;
+    text-decoration: none;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+
+    &:hover {
+      border: 1px solid;
+    }
+
+    &.active {
+      border: 1px solid;
+    }
+
+    span {
+      font-weight: 400;
+    }
+  }
+
+  &__listContainer {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50%;
+  }
+
+  &__list {
+    width: 100%;
+    min-height: 430px;
+  }
 }
