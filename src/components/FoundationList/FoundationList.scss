@@ -1,10 +1,10 @@
 .foundationList {
   width: 100%;
   min-height: 100vh;
-  padding: 4rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 
   &__header {
@@ -13,6 +13,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
 
   &__ornament {
@@ -62,16 +63,18 @@
       font-weight: 400;
     }
   }
-}
 
-.listOfFounds {
-  width: 100%;
-
-  &__container {
+  &__listContainer {
     width: 75%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    height: 50%;
+  }
+
+  &__list {
+    width: 100%;
+    min-height: 430px;
   }
 }

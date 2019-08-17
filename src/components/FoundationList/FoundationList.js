@@ -1,44 +1,73 @@
 import React, { Component } from "react";
-import classNames from 'classnames';
+import classNames from "classnames";
 import Foundation from "../Foundation";
+import Pagination from "../Pagination";
 import "./FoundationList.scss";
 
 export default class FoundationList extends Component {
   state = {
     foundations: [],
-    clicked: "Fundacja"
-  }
+    clicked: "Fundacja",
+    currentPage: 1,
+    itemsPerPage: 3
+  };
 
   get items() {
-    const { foundations, clicked } = this.state;
+    const { foundations, clicked, currentPage, itemsPerPage } = this.state;
     if (foundations.length) {
-      const foundation = foundations.find(found => found.category === clicked );
-      return foundation.items.map(item => <Foundation foundation={item} category={clicked} />);
+      const foundation = foundations.find(found => found.category === clicked);
+      const indexOfLastItem = currentPage * itemsPerPage;
+      const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+      const currentItems = foundation.items.slice(
+        indexOfFirstItem,
+        indexOfLastItem
+      );
+      return (
+        <>
+          <ul className="foundationList__list">
+            {currentItems.map(item => (
+              <Foundation key={currentItems.indexOf(item)} foundation={item} category={clicked} />
+            ))}
+          </ul>
+          <Pagination
+            itemsPerPage={this.state.itemsPerPage}
+            totalItems={foundation.items.length}
+            paginate={this.paginate}
+            currentPage={this.state.currentPage}
+          />
+        </>
+      );
     }
     return null;
   }
 
   componentDidMount() {
-    fetch('http://localhost:3001/fundations')
+    fetch("http://localhost:3001/fundations")
       .then(res => res.json())
-      .then(foundations => this.setState({ foundations }))
+      .then(foundations => this.setState({ foundations }));
   }
 
   getFundations() {
     return this.state.foundations.map(item => (
-      <button className={classNames('foundationList__btn', {
-        'active': this.state.clicked === item.category
-      })} onClick={this.handleOnClick(item.category)} >
+      <button
+        key={item.btnText}
+        className={classNames("foundationList__btn", {
+          active: this.state.clicked === item.category
+        })}
+        onClick={this.handleOnClick(item.category)}
+      >
         <span>{item.btnText}</span>
       </button>
-    ))
+    ));
   }
 
-  handleOnClick = (category) => () => this.setState({ clicked: category })
+  handleOnClick = category => () => this.setState({ clicked: category, currentPage: 1 });
 
+  paginate = (pageNumber) => {
+    this.setState({ currentPage: pageNumber })
+  }
 
   render() {
-    console.log(this.state.foundations)
     return (
       <section id="foundationList" className="foundationList">
         <div className="foundationList__header">
@@ -57,10 +86,8 @@ export default class FoundationList extends Component {
             pomagają i czego potrzebują.
           </p>
         </div>
-        <div className="listOfFounds__container">
-          <ul class="listOfFounds">
-            {this.items}
-          </ul>
+        <div className="foundationList__listContainer">
+          {this.items}
         </div>
       </section>
     );
