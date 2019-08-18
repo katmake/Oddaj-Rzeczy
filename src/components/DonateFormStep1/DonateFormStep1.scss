@@ -1,0 +1,68 @@
+.donateStep1 {
+  margin-left: 10%;
+  margin-top: 2rem;
+
+  span {
+    font-size: 1.25rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+  }
+
+  &__btn {
+    width: 120px;
+    height: 60px;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    border: 1px solid;
+    background-color: transparent;
+    outline: none;
+  }
+}
+
+// .option {
+//   margin: 2rem 1rem;
+//   font-size: 1.5rem;
+
+//   .checkbox {
+//     display: block;
+//     position: relative;
+//     padding-left: 3rem;
+//     margin-bottom: 12px;
+//     cursor: pointer;
+//     font-size: 22px;
+//     user-select: none;
+
+//     input {
+//       position: absolute;
+//       opacity: 0;
+//       cursor: pointer;
+//       height: 0;
+//       width: 0;
+
+//       &:checked ~ .checkbox__checkmark {
+//         i {
+//           display: inline-block;
+//         }
+//       }
+//     }
+
+//     &__checkmark {
+//       position: absolute;
+//       top: 0;
+//       left: 0;
+//       height: 30px;
+//       width: 30px;
+//       background-color: transparent;
+//       border: 1px solid;
+//       text-align: center;
+
+//       i {
+//         display: none;
+//       }
+//     }
+//   }
+// }
