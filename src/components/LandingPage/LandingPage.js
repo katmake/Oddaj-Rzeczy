@@ -8,10 +8,15 @@ import Footer from "../Footer";
 import './LandingPage.scss';
 
 export default class LandingPage extends Component {
+
+  state = {
+    loggedIn: true,
+  }
+
   render() {
     return (
       <div className="landingPage">
-        <Header />
+        <Header loggedIn={this.state.loggedIn} userName="Tomek"/>
         <Achievements />
         <CallToAction />
         <About />

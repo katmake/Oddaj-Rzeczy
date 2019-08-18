@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
+import UserNavigation from "../UserNavigation";
 import "./Header.scss";
 
 const options = {
@@ -12,14 +13,20 @@ const options = {
   isDynamic: true
 };
 
-const Header = () => {
+const Header = ({ loggedIn, userName }) => {
   return (
     <section id="header" className="header">
       <nav className="navigation">
-        <div className="navigation__buttons">
-          <a href="./logowanie">Zaloguj</a>
-          <a href="./rejestracja">Załóż konto</a>
-        </div>
+        {loggedIn ? (
+          <div>
+            <UserNavigation userName={userName} />
+          </div>
+        ) : (
+          <div className="navigation__buttons">
+            <a href="./logowanie">Zaloguj</a>
+            <a href="./rejestracja">Załóż konto</a>
+          </div>
+        )}
 
         <div>
           <ul className="navigation__list">
