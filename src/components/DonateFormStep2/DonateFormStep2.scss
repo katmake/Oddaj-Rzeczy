@@ -1,0 +1,45 @@
+.donateStep2 {
+  margin-left: 10%;
+  margin-top: 2rem;
+
+  span {
+    font-size: 1.25rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+  }
+
+  form {
+    margin: 2rem;
+    
+    font-size: 1.25rem;
+
+    label {
+      margin-right: 1rem;
+    }
+
+    select {
+      height: 40px;
+      width: 160px;
+      padding-left: 10px;
+      margin-bottom: 3rem;
+      background: transparent;
+      border: 1px solid;
+      outline: none;
+    }
+  }
+
+  &__btn {
+    width: 120px;
+    height: 60px;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    font-size: 1.3rem;
+    border: 1px solid;
+    background-color: transparent;
+    outline: none;
+  }
+}
