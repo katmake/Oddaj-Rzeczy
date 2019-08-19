@@ -10,7 +10,7 @@ import './LandingPage.scss';
 export default class LandingPage extends Component {
 
   state = {
-    loggedIn: true,
+    loggedIn: true
   }
 
   render() {

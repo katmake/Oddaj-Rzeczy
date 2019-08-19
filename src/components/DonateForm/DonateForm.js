@@ -6,7 +6,7 @@ import "./DonateForm.scss";
 
 export default class DonateForm extends Component {
   state = {
-    currentPage: 2
+    currentPage: 1
   };
 
   moveToNextPage = () => {

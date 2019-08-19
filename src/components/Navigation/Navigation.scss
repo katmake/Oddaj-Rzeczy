@@ -1,0 +1,46 @@
+.navigation {
+  padding: 1rem 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  &__buttons {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: flex-end;
+
+    a {
+      font-size: 0.9rem;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border: 1px solid white;
+
+      &:hover {
+        border: 1px solid #f9c910;
+      }
+    }
+  }
+
+  &__list {
+    li {
+      display: inline-block;
+      margin: 0 0.5rem;
+      padding: 0.75rem 1.25rem;
+      font-size: 1.15rem;
+      border: 1px solid white;
+
+      &.active {
+        border: 1px solid;
+      }
+
+      &.last {
+        margin-right: 0;
+      }
+
+      &:hover {
+        border: 1px solid;
+      }
+    }
+  }
+}
