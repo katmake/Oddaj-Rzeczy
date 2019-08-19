@@ -1,18 +1,6 @@
 import React from "react";
-// import { Link } from "react-scroll";
 import Navigation from "../Navigation";
-// import UserNavigation from "../UserNavigation";
 import "./Header.scss";
-
-// const options = {
-//   activeClass: "active",
-//   spy: true,
-//   smooth: true,
-//   hashSpy: true,
-//   offset: 0,
-//   duration: 500,
-//   isDynamic: true
-// };
 
 const Header = ({ loggedIn, userName }) => {
   return (
