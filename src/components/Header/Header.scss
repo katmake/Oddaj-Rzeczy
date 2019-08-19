@@ -14,49 +14,6 @@
   background-position-y: bottom;
 }
 
-.navigation {
-  margin: 2rem 10%;
-
-  &__buttons {
-    margin: 1rem 0;
-    display: flex;
-    justify-content: flex-end;
-
-    a {
-      font-size: 0.9rem;
-      padding: 0.5rem 1rem;
-      text-decoration: none;
-      border: 1px solid white;
-
-      &:hover {
-        border: 1px solid #f9c910;
-      }
-    }
-  }
-
-  &__list {
-    li {
-      display: inline-block;
-      margin: 0 0.5rem;
-      padding: 0.75rem 1.25rem;
-      font-size: 1.15rem;
-      border: 1px solid white;
-
-      &.active {
-        border: 1px solid;
-      }
-
-      &.last {
-        margin-right: 0;
-      }
-
-      &:hover {
-        border: 1px solid;
-      }
-    }
-  }
-}
-
 .cta {
   width: 40%;
   min-height: 300px;
