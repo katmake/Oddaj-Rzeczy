@@ -9,9 +9,11 @@ export default class DonateForm extends Component {
     currentPage: 1
   };
 
-  moveToNextPage = () => {
+  moveToNextPage = (data) => {
     this.setState(prevState => {
       return {
+        ...prevState,
+        ...data,
         currentPage: prevState.currentPage + 1
       };
     });
@@ -87,6 +89,7 @@ export default class DonateForm extends Component {
   }
 
   render() {
+    console.log(this.state)
     return <section className="donateForm">{this.form}</section>;
   }
 }
