@@ -7,52 +7,72 @@
         {
           "name": "Dbam o Zdrowie",
           "mission": "Pomoc osobom znajdującym się w trudnej sytuacji życiowej",
-          "needs": "ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+          "needs": "ubrania, jedzenie, sprzęt AGD, meble, zabawki",
+          "location": "Kraków",
+          "beneficients": "osoby starsze"
         },
         {
           "name": "Dla dzieci",
           "mission": "Pomoc dzieciom z ubogich rodzin",
-          "needs": "ubrania, meble, zabawki"
+          "needs": "ubrania, meble, zabawki",
+          "location": "Warszawa",
+          "beneficients": "dzieci"
         },
         {
           "name": "Bez domu",
           "mission": "Pomoc dla osób nie posiadających miejsca zamieszkania",
-          "needs": "ubrania, jedzenie, ciepłe koce"
+          "needs": "ubrania, jedzenie, ciepłe koce",
+          "location": "Gdańsk",
+          "beneficients": "bezdomni"
         },
         {
           "name": "Lorem ipsum 1",
           "mission": "Accumsan lacus vel facilisis volutpat est.",
-          "needs": "enim nec dui nunc mattis"
+          "needs": "enim nec dui nunc mattis",
+          "location": "Lorem",
+          "beneficients": "ipsum"
         },
         {
           "name": "Lorem ipsum 2",
           "mission": "Accumsan lacus vel facilisis volutpat est.",
-          "needs": "enim nec dui nunc mattis"
+          "needs": "enim nec dui nunc mattis",
+          "location": "Lorem",
+          "beneficients": "ipsum"
         },
         {
           "name": "Lorem ipsum 3",
           "mission": "Accumsan lacus vel facilisis volutpat est.",
-          "needs": "enim nec dui nunc mattis"
+          "needs": "enim nec dui nunc mattis",
+          "location": "Lorem",
+          "beneficients": "ipsum"
         },
         {
           "name": "Lorem ipsum 4",
           "mission": "Accumsan lacus vel facilisis volutpat est.",
-          "needs": "enim nec dui nunc mattis"
+          "needs": "enim nec dui nunc mattis",
+          "location": "Lorem",
+          "beneficients": "ipsum"
         },
         {
           "name": "Lorem ipsum 5",
           "mission": "Accumsan lacus vel facilisis volutpat est.",
-          "needs": "enim nec dui nunc mattis"
+          "needs": "enim nec dui nunc mattis",
+          "location": "Lorem",
+          "beneficients": "ipsum"
         },
         {
           "name": "Lorem ipsum 6",
           "mission": "Accumsan lacus vel facilisis volutpat est.",
-          "needs": "enim nec dui nunc mattis"
+          "needs": "enim nec dui nunc mattis",
+          "location": "Lorem",
+          "beneficients": "ipsum"
         },
         {
           "name": "Lorem ipsum 7",
           "mission": "Accumsan lacus vel facilisis volutpat est.",
-          "needs": "enim nec dui nunc mattis"
+          "needs": "enim nec dui nunc mattis",
+          "location": "Lorem",
+          "beneficients": "ipsum"
         }
       ]
     },
@@ -63,32 +83,44 @@
         {
           "name": "Świetlica Słoneczko",
           "mission": "Pomoc dzieciom w nauce, animacja wolnego czasu",
-          "needs": "pomoce naukowe, artykuły szkolne, gry, zabawki"
+          "needs": "pomoce naukowe, artykuły szkolne, gry, zabawki",
+          "location": "Poznań",
+          "beneficients": "dzieci"
         },
         {
           "name": "Nowy start",
           "mission": "Wsparcie reintegracji osóby wykluczonych społecznie",
-          "needs": "artykuły gospodarstwa domowego, meble, odzież"
+          "needs": "artykuły gospodarstwa domowego, meble, odzież",
+          "location": "Warszawa",
+          "beneficients": "bezdomni"
         },
         {
           "name": "Pies i kot",
           "mission": "Opieka nad bezdomnymi zwierzętami",
-          "needs": "karma, koce"
+          "needs": "karma, koce",
+          "location": "Kraków",
+          "beneficients": "ipsum"
         },
         {
           "name": "Aktywne dziecko",
           "mission": "Promocja sportu i zdrowego trybu życia",
-          "needs": "sprzęt sportowy, odzież sportowa"
+          "needs": "sprzęt sportowy, odzież sportowa",
+          "location": "Warszawa",
+          "beneficients": "dzieci"
         },
         {
           "name": "Lorem ipsum",
           "mission": "Accumsan lacus vel facilisis volutpat est.",
-          "needs": "enim nec dui nunc mattis"
+          "needs": "enim nec dui nunc mattis",
+          "location": "Lorem",
+          "beneficients": "ipsum"
         },
         {
           "name": "Lorem ipsum",
           "mission": "Accumsan lacus vel facilisis volutpat est.",
-          "needs": "enim nec dui nunc mattis"
+          "needs": "enim nec dui nunc mattis",
+          "location": "Lorem",
+          "beneficients": "ipsum"
         }
       ]
     },
@@ -99,42 +131,58 @@
         {
           "name": "Książki dla szpitala",
           "mission": "Poszerzamy zbiory biblioteki przyszpitalnej",
-          "needs": "książki, czasopisma, płyty dvd"
+          "needs": "książki, czasopisma, płyty dvd",
+          "location": "Kraków",
+          "beneficients": "dzieci"
         },
         {
           "name": "Wspieramy Dom Samotnej Matki",
           "mission": "Pomoc kobietom w trudnej sytuacji życiowej",
-          "needs": "artykuły higieny osobistej, kosmetyki, ubrania, zabawki"
+          "needs": "artykuły higieny osobistej, kosmetyki, ubrania, zabawki",
+          "location": "Gdańsk",
+          "beneficients": "samotne matki"
         },
         {
           "name": "Nakrętki dla Szymona",
           "mission": "Zbieramy  nakrętki na wózek inwalidzki",
-          "needs": "plastikowe nakrętki"
+          "needs": "plastikowe nakrętki",
+          "location": "Warszawa",
+          "beneficients": "niepełnosprawni"
         },
         {
           "name": "Podziel się ciepłem",
           "mission": "Pomoc osobom bezdomnym",
-          "needs": "szale, czapki, rękawiczki, kurtki, swetry"
+          "needs": "szale, czapki, rękawiczki, kurtki, swetry",
+          "location": "Kraków",
+          "beneficients": "bezdomni"
         },
         {
           "name": "Nakrętki dla hospicjum",
           "mission": "Zgromadzenie środków na remont budynku hospicjum",
-          "needs": "plastikowe nakrętki"
+          "needs": "plastikowe nakrętki",
+          "location": "Poznań",
+          "beneficients": "osoby starsze"
         },
         {
           "name": "Lorem ipsum",
           "mission": "Accumsan lacus vel facilisis volutpat est.",
-          "needs": "enim nec dui nunc mattis"
+          "needs": "enim nec dui nunc mattis",
+          "location": "Lorem",
+          "beneficients": "ipsum"
         },
         {
           "name": "Lorem ipsum",
           "mission": "Accumsan lacus vel facilisis volutpat est.",
-          "needs": "enim nec dui nunc mattis"
+          "needs": "enim nec dui nunc mattis",
+          "location": "Lorem",
+          "beneficients": "ipsum"
         },
         {
           "name": "Lorem ipsum",
           "mission": "Accumsan lacus vel facilisis volutpat est.",
-          "needs": "enim nec dui nunc mattis"
+          "needs": "enim nec dui nunc mattis",
+          "location": "Lorem",
+          "beneficients": "ipsum"
         }
       ]
     }
