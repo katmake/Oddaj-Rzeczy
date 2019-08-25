@@ -3,12 +3,14 @@ import DonateFormStep1 from "../DonateFormStep1";
 import DonateFormStep2 from "../DonateFormStep2";
 import DonateFormStep3 from "../DonateFormStep3";
 import SearchResult from "../SearchResult";
+import DonateFormStep4 from "../DonateFormStep4";
 import DonateFormThanks from "../DonateFormThanks";
 import "./DonateForm.scss";
 
 export default class DonateForm extends Component {
   state = {
-    currentPage: 3
+    currentPage: 5,
+    foundFoundations: []
   };
 
   moveToNextPage = data => {
@@ -91,15 +93,20 @@ export default class DonateForm extends Component {
         );
         break;
       case 5:
-        msg = <p>msg</p>;
-        page = <div>krok 4</div>;
+        msg = <p>Podaj adres oraz termin odbioru rzeczy.</p>;
+        page = (
+          <DonateFormStep4
+            moveToPrevPage={this.moveToPrevPage}
+            moveToNextPage={this.moveToNextPage}
+          />
+        );
         break;
       default:
         msg =
           "Uzupełnij szczegóły dotyczące Twoich rzeczy. Dzięki temu będziemy wiedzieć komu najlepiej je przekazać.";
         page = <DonateFormStep1 moveToNextPage={this.moveToNextPage} />;
     }
-    if (this.state.currentPage === 5) {
+    if (this.state.currentPage === 6) {
       return (
         <div className="donateForm__thanks">
           <DonateFormThanks />
