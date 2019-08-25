@@ -10,7 +10,7 @@ import "./DonateForm.scss";
 export default class DonateForm extends Component {
   state = {
     currentPage: 5,
-    foundFoundations: []
+    foundFoundations: [],
   };
 
   moveToNextPage = data => {
@@ -81,7 +81,7 @@ export default class DonateForm extends Component {
           <p>
             Na podstawie Twoich kryteriów oraz rzeczy, które masz do oddania
             wybraliśmy organizacje, którym możesz pomóc. Wybierz jedną, do
-            której trafi Twoja przesyłka
+            której trafi Twoja przesyłka.
           </p>
         );
         page = (

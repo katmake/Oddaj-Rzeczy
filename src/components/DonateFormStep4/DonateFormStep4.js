@@ -19,6 +19,7 @@ export default class DonateFormStep4 extends Component {
   };
 
   handleOnChange = e => {
+    e.preventDefault();
     this.setState({
       [e.target.name]: e.target.value,
     });
