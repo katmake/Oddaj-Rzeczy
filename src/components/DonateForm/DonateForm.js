@@ -1,15 +1,17 @@
 import React, { Component } from "react";
 import DonateFormStep1 from "../DonateFormStep1";
 import DonateFormStep2 from "../DonateFormStep2";
+import DonateFormStep3 from "../DonateFormStep3";
+import SearchResult from "../SearchResult";
 import DonateFormThanks from "../DonateFormThanks";
 import "./DonateForm.scss";
 
 export default class DonateForm extends Component {
   state = {
-    currentPage: 1
+    currentPage: 3
   };
 
-  moveToNextPage = (data) => {
+  moveToNextPage = data => {
     this.setState(prevState => {
       return {
         ...prevState,
@@ -58,12 +60,39 @@ export default class DonateForm extends Component {
         );
         break;
       case 3:
-        msg = <p>msg 3</p>;
-        page = <h2>Step 3</h2>;
+        msg = (
+          <p>
+            Jeśli wiesz komu chcesz pomóc, możesz wpisać nazwę tej organizacji w
+            wyszukiwarce. Możesz też filtrować organizacje po ich lokalizacji
+            bądź celu ich pomocy.
+          </p>
+        );
+        page = (
+          <DonateFormStep3
+            moveToNextPage={this.moveToNextPage}
+            moveToPrevPage={this.moveToPrevPage}
+          />
+        );
         break;
       case 4:
-        msg = <p>msg 4</p>;
-        page = <h2>Step 4</h2>;
+        msg = (
+          <p>
+            Na podstawie Twoich kryteriów oraz rzeczy, które masz do oddania
+            wybraliśmy organizacje, którym możesz pomóc. Wybierz jedną, do
+            której trafi Twoja przesyłka
+          </p>
+        );
+        page = (
+          <SearchResult
+            moveToNextPage={this.moveToNextPage}
+            moveToPrevPage={this.moveToPrevPage}
+            foundations={this.state.foundFoundations}
+          />
+        );
+        break;
+      case 5:
+        msg = <p>msg</p>;
+        page = <div>krok 4</div>;
         break;
       default:
         msg =
@@ -89,7 +118,7 @@ export default class DonateForm extends Component {
   }
 
   render() {
-    console.log(this.state)
+    console.log(this.state);
     return <section className="donateForm">{this.form}</section>;
   }
 }
