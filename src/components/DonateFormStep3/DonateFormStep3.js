@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import uuid from "uuid";
+import beneficients from "./beneficients";
+import cities from "./cities";
 import "./DonateFormStep3.scss";
 
 export default class DonateFormStep3 extends Component {
@@ -30,7 +32,9 @@ export default class DonateFormStep3 extends Component {
     });
   };
 
-  get foundations() {
+  handleSearch = (e) => {
+    e.preventDefault();
+
     const { foundations, city, group, name } = this.state;
 
     if (foundations.length) {
@@ -74,109 +78,63 @@ export default class DonateFormStep3 extends Component {
         default:
           foundFoundations = foundations;
       }
-
-      return foundFoundations.length ? (
-        foundFoundations.map(item => <li key={uuid()}>{item.name}</li>)
-      ) : (
-        <p>Nie znaleziono fundacji spałniającej wybrane kryteria</p>
-      );
+      const searchResult = {foundFoundations: foundFoundations};
+      this.props.moveToNextPage(searchResult);
     }
-
-    return null;
   }
-
-  validateName = e => {
-    if (e.target.value.length < 3) {
-      console.log("blad");
-    }
-  };
 
   render() {
     return (
       <div className="donateStep3">
         <span>Krok 3/4</span>
-        <form onSubmit={this.handleOnSubmit}>
+        <form onSubmit={this.handleSearch}>
           <div className="donateStep3__inputSelectWrapper">
-            <label htmlFor="location">Lokalizacja:</label>
+            <label key={uuid()} htmlFor="location">Lokalizacja:</label>
             <select
               id="location"
               name="location"
               value={this.state.city}
               onChange={this.handleOnChange("city")}
             >
-              <option value="">-wybierz-</option>
-              <option value="Kraków">Kraków</option>
-              <option value="Poznań">Poznań</option>
-              <option value="Warszawa">Warszawa</option>
-              <option value="Gdańsk">Gdańsk</option>
+              <option key="wybierz" value="">-wybierz-</option>
+              {cities.map(item => (
+                <option
+                  key={item}
+                  value={item}
+                >
+                  {item}
+                </option>
+              ))}
             </select>
           </div>
 
-          <div className="donateStep3__inputCheckboxWrapper">
+          <div className="donateStep3__inputRadioWrapper">
             <p>Komu chcesz pomóc?</p>
 
             <div className="donateStep3__options">
-              <label>
-                <input
-                  type="radio"
-                  value="dzieci"
-                  checked={this.state.group === "dzieci"}
-                  name="group"
-                  onChange={this.handleOnChange("group")}
-                />
-                dzieciom
-              </label>
-              <label>
-                <input
-                  type="radio"
-                  value="samotne matki"
-                  checked={this.state.group === "samotne matki"}
-                  name="group"
-                  onChange={this.handleOnChange("group")}
-                />
-                samotnym matkom
-              </label>
-              <label>
-                <input
-                  type="radio"
-                  value="bezdomni"
-                  checked={this.state.group === "bezdomni"}
-                  name="group"
-                  onChange={this.handleOnChange("group")}
-                />
-                bezdomnym
-              </label>
-              <label>
-                <input
-                  type="radio"
-                  value="niepełnosprawni"
-                  checked={this.state.group === "niepełnosprawni"}
-                  name="group"
-                  onChange={this.handleOnChange("group")}
-                />
-                niepełnosprawnym
-              </label>
-              <label>
-                <input
-                  type="radio"
-                  value="osoby starsze"
-                  checked={this.state.group === "osoby starsze"}
-                  name="group"
-                  onChange={this.handleOnChange("group")}
-                />
-                osobom starszym
-              </label>
+              {beneficients.map(item => (
+                <label key={uuid()}>
+                  <input
+                    key={item.name}
+                    type="radio"
+                    value={item.name}
+                    checked={this.state.group === item.name}
+                    name="group"
+                    onChange={this.handleOnChange("group")}
+                  />
+                  <span className="radio">{item.radioText}</span>
+                </label>
+              ))}
             </div>
           </div>
 
           <div className="donateStep3__inputTextWrapper">
-            <label htmlFor="">
+            <label key={uuid()} htmlFor="">
               Wpisz nazwę konkretnej organizacji (opcjonalnie)
             </label>
             <input
               type="text"
               value={this.state.name}
-              onBlur={this.validateName}
               onChange={this.handleOnChange("name")}
             />
           </div>
@@ -193,9 +151,6 @@ export default class DonateFormStep3 extends Component {
             </button>
           </div>
         </form>
-        <div>
-          <ul>{this.foundations}</ul>
-        </div>
       </div>
     );
   }
