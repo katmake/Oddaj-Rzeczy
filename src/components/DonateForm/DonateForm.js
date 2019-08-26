@@ -10,7 +10,8 @@ import "./DonateForm.scss";
 
 export default class DonateForm extends Component {
   state = {
-    currentPage: 5,
+    currentPage: 1,
+    numberOfBags: 1,
     foundFoundations: []
   };
 

@@ -1,9 +1,9 @@
 const options = {
-  option1: "ubrania, które nadają się do ponownego użycia",
-  option2: "ubrania do wyrzucenia",
-  option3: "zabawki",
-  option4: "książki",
-  option5: "inne"
+  clothes: "ubrania, które nadają się do ponownego użycia",
+  clothesToRecycle: "ubrania do wyrzucenia",
+  toys: "zabawki",
+  books: "książki",
+  other: "inne"
 }
 
 export default options;
